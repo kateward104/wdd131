@@ -56,11 +56,18 @@ footer img {
 
 
 .dark {
-    background: "#333";
+    background-color: #333;
     color: white;
 
 }
 
 .dark h5 {
     color: 4F9ACF;
+}
+
+
+select {
+    width: 90px;
+    height: 70px;
+    margin-top: 200;
 }
