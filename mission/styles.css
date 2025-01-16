@@ -53,3 +53,14 @@ footer img {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.dark {
+    background: "#333";
+    color: white;
+
+}
+
+.dark h5 {
+    color: 4F9ACF;
+}
