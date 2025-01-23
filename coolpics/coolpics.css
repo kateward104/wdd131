@@ -21,8 +21,14 @@ header {
 h1 {
      text-align: center;
      color: white;
-     /*font-family: */
+     font-family: var(--secondary-font);
 }
+
+
+h2 {
+    font-size: x-large;
+}
+
 
 nav {
      color: white;
@@ -53,6 +59,10 @@ img {
     max-width: 100%;
     border: 8px solid white;
     box-shadow: 3px 3px 5px black;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    
 }
 
 h3 {
@@ -62,6 +72,7 @@ h3 {
 footer {
     background-color: #52489c;
     color: #ebebeb;
+    padding: 10px;
 }
 
 
