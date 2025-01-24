@@ -14,7 +14,8 @@
 
 header {
     background-color: #52489c;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 
@@ -22,20 +23,26 @@ h1 {
      text-align: center;
      color: white;
      font-family: var(--secondary-font);
+     font-size: 70px;
+     margin-top: -5px;
 }
 
 
-h2 {
+button {
     font-size: x-large;
+    background-color: #52489c;
+    color: white;
+    border: none;
+    font-size: 31px;
 }
 
 
 nav {
      color: white;
      text-align: center;
-     margin: 20px;
+     margin: 10px;
+     font-size: 22px;
 }
-
 
 
 body {
@@ -52,6 +59,15 @@ a:visited {
 
 a:link {
     color: white;
+    display: block;
+    padding: 10px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1;
+    text-align: center;
 }
 
 
@@ -62,10 +78,10 @@ img {
     height: 250px;
     width: 250px;
     object-fit: cover;
-    
 }
 
 h3 {
+    font-family: var(--primary-font);
     text-align: center;
 }
 
@@ -77,10 +93,38 @@ footer {
 
 
 @media screen and (min-width: 700px) {
+    a:link {
+        display: inline;
+    }
+
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 }
 
 
 @media screen and (min-width: 1000px) {
-   
+    a {
+        padding: 20px;
+    }
+
+    a:link {
+        display: inline;
+        padding: 50px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    button {
+        display: none;
+    }
+
+
 }
