@@ -3,13 +3,17 @@ let tasks = [];
 
 function renderTasks(tasks) {
     // get the list element from the DOM
+    todoList = getElementById("todoList")
     // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
 }
 
 function newTask() {
     // get the value entered into the #todo input
+    let taskName = document.getElementById("todo").value; 
     // add it to our arrays tasks
+    tasks.push(taskName);
     // render out the list
+    
 }
 
 function removeTask(taskElement) {
@@ -50,3 +54,5 @@ function manageTasks(event) {
 
 // Add your event listeners here
 // We need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
+button = document.getElementById("submitTask");
+button.addEventListener("click", newTask);
