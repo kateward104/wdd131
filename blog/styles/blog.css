@@ -1,0 +1,79 @@
+/*Colors and Fonts
+Gold color: #EFC69B 
+Red color: #AF1B3F 
+Dark color: #473144 
+Body font: Helvetica, Arial, sans-serif 
+Headline font: Lora, Impact, serif
+*/
+
+
+h1 {
+    font-family: Lora, Impact, Serif;
+    color: #273144;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    text-decoration: none;
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: right;
+    /*justify-content: end;
+    justify-items: end;*/
+    list-style: none;
+    padding: 20px; /*Add padding here*/
+    margin: 0; /*Add margin here*/
+    border-top: 1px solid #AF1B3F;
+    border-bottom: 1px solid #AF1B3F;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+}
+
+img {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+}
+
+.items {
+    padding: 10px;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+h2 {
+    color: #AF1B3F;
+}
+
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.filter p {
+    text-align: center;
+}
+
+
+
