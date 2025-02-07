@@ -22,15 +22,20 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 50px);
+    gap: 40px;
     text-align: right;
-    /*justify-content: end;
-    justify-items: end;*/
+    justify-content: end;
+    justify-items: end;
     list-style: none;
-    padding: 20px; /*Add padding here*/
-    margin: 0; /*Add margin here*/
+    padding: 20px;
+    margin: 0 auto;
     border-top: 1px solid #AF1B3F;
     border-bottom: 1px solid #AF1B3F;
+}
+
+nav li {
+    padding-right: 70px;
 }
 
 
@@ -71,7 +76,7 @@ p {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.filter p {
+.Filter p {
     text-align: center;
 }
 
