@@ -18,9 +18,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: (rgba(0, 0, 0, 0.75));
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
     /*Center using grid*/
-    color: white;
     /*Use grid to place it in the first row
     and the image in the second row*/
 }
@@ -28,7 +28,20 @@
 /*Style the button to match the mockup*/
 
 .viewer img {
-    max-height: 100%;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    align-self: center;
+}
+
+
+.close-viewer {
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    align-self: right;
+    justify-self: right;
     padding: 20px;
 }
 
@@ -49,7 +62,7 @@ h1 {
 }
 
 
-button {
+header button {
     font-size: x-large;
     background-color: #52489c;
     color: white;
@@ -63,6 +76,10 @@ nav {
      text-align: center;
      margin: 10px;
      font-size: 22px;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -92,7 +109,7 @@ a:link {
 }
 
 
-img {
+.gallery img {
     max-width: 100%;
     border: 8px solid white;
     box-shadow: 3px 3px 5px black;
@@ -128,6 +145,11 @@ footer {
     }
 
 
+    .viewer img {
+        max-width: 80%;
+    }
+
+
 }
 
 
@@ -137,7 +159,6 @@ footer {
     }
 
     a:link {
-        display: inline;
         padding: 50px;
     }
 
@@ -147,9 +168,18 @@ footer {
         grid-template-rows: repeat(3, 1fr);
     }
 
-    button {
+    header button {
         display: none;
     }
 
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 40px; /*I am not sure why this centers it.*/
+    }
+
+    .viewer img {
+        max-width: 50%;
+    }
 
 }
