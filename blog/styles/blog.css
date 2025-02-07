@@ -7,6 +7,20 @@ Headline font: Lora, Impact, serif
 */
 
 
+.skiptocontent a {
+    position: absolute; /* set the element to absolute positioning */
+    left: -1000px; /* move it off screen */
+    /*top: 0;*/ /* Make sure it will be on the left edge of the screen */
+    background: black; /* Change the background and color to something that stands out */
+    color: yellow;
+}
+
+.skiptocontent a:focus {
+    left: 20px;
+    top: 10px; /* Move it back on when focused */
+}
+
+
 h1 {
     font-family: Lora, Impact, Serif;
     color: #273144;
