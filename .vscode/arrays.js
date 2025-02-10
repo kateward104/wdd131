@@ -25,3 +25,9 @@ function convertGradeToNumber(grade) {
 const gpaPoints = grades.map(convertGradeToNumber);
 
 console.log("gap points: " + gpaPoints);
+
+
+const gpa = gpaPoints.reduce((total, item) => {
+    return total + item;
+    //This is the shorthand nottation for a function.
+}, 0);
