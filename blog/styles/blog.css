@@ -59,8 +59,9 @@ nav a {
 }
 
 img {
-    margin: 10px;
-    margin-left: 30px;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
 
 
@@ -72,7 +73,20 @@ main {
 
 .items {
     padding: 10px;
+    margin-right: 30px;
+    text-align: right;
 }
+
+.book-details {
+    border-right: solid 1px #AF1B3F;
+    margin-bottom: 50px;
+}
+
+.book-description {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
 
 
 article {
@@ -90,8 +104,16 @@ p {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.Filter p {
-    text-align: center;
+.filter {
+    border: solid 1px #AF1B3F;
+    margin: 40px;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 
