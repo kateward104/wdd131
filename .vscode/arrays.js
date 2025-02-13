@@ -31,3 +31,20 @@ const gpa = gpaPoints.reduce((total, item) => {
     return total + item;
     //This is the shorthand nottation for a function.
 }, 0);
+
+
+
+
+const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape']
+
+const newFruits = fruits.filter(function (fruits) {
+    return fruits.length < 6; // Return true to keep the element, false to remove it
+})
+
+
+
+const luckyNumberarray = [12, 34, 21, 54];
+const luckyNumber = 21;
+let luckyIndex = luckyNumberarray.indexOf(luckyNumber);
+
+
