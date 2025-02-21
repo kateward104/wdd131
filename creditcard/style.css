@@ -1,0 +1,152 @@
+
+#creditcard {
+    background: white;
+    width: 550px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+
+#creditcardFront {
+    /*width: 700px;
+    height: 300px;*/
+    background: rgb(227, 227, 227);
+    padding: 20px;
+    box-shadow: 1px 3px 3px rgb(135, 135, 135);
+    grid-row: 1/3;
+    grid-column: 1 / 3;
+    z-index: 1;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    display: grid;
+}
+
+#creditcardBack {
+    /*width: 700px;
+    height: 300px;*/
+    background: rgb(227, 227, 227);
+    z-index: 0;
+    box-shadow: 1px 3px 3px rgb(135, 135, 135);
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    display: grid;
+}
+
+#creditcardFront label {
+    display: block;
+}
+
+
+
+/*.first {
+    display: inline-flex;
+    grid-row: 1 / 2; 
+}*/
+
+p {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-content: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.card-image {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.cardNumber {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    padding: none;
+}
+
+.cardNumber input {
+    width: 100%;
+    height: 25px;
+}
+
+.cardNumber input, label {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.cardHolder {
+    grid-column: 1 / 2;
+    font-family: 'Courier New', Courier, monospace;
+    grid-row: 3;
+}
+
+.cardHolder input {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 25px;
+}
+
+.expiration {
+    text-align: center;
+    justify-self: end;
+    grid-column: 2 / 3;
+    font-family: 'Courier New', Courier, monospace;
+    grid-row: 3 / 4;
+}
+
+.expiration input {
+    width: 40px;
+    height: 25px;
+    display: inline-flex;
+    justify-self: end;
+}
+
+
+
+label {
+    padding-bottom: 2px;
+}
+
+/*****Back Card*****/
+
+.black {
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(55, 55, 55);
+}
+
+.cvv {
+    /*padding-right: 10px;*/
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cvv input {
+    width: 50px;
+    height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: end;
+}
