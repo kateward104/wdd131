@@ -14,7 +14,20 @@ const aCourse = {
         }
         renderSections(this.sections);
     },
+
+    dropStudent: function (sectionNum) { // Do the same thing for drop student
+        const sectionIndex = this.sections.findIndex((section) => section.sectionNum = sectionNum);
+
+        if (sectionIndex > 0) {
+            this.sections[sectionIndex].enrolled--;
+        }
+        renderSections(this.sections);
+    }
 };
+
+function SetCourseInfo(course) {
+    //Function information here.
+}
 
 function renderCourseDetails(course) {
     document.querySelector("#courseName").textContent = course.name;
@@ -36,6 +49,7 @@ function sectionTemplate(section) {
 function renderSections(sections) {
     const html = sections.map(sectionTemplate);
     document.querySelector("#sections").innerHTML = html.join("")
+    // tr and td?
 }
 
 renderCourseDetails(aCourse);

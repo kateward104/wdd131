@@ -58,4 +58,4 @@ function renderSections(sections) {
     document.querySelector("#sections").innerHTML = html.join("");
 }
 
-export default aCourse
+export default aCourse;
