@@ -172,11 +172,24 @@ button {
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    grid-column: span 2;
+    justify-self: center;
 }
 
 button:hover {
     background: #00b33c;
 }
+
+
+/************ New CSS *****************/
+
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
 
 @media (max-width: 568px) {
     .columns div {
