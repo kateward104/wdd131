@@ -18,13 +18,17 @@
     </header>
     <main>
         <form action="#">
-            <input type="search" placeholder="Find a recipe"/>
-            <button type="button"><img src="images/search.svg" alt="search"></button>
+            <div id="search">
+                <input type="search" placeholder="Find a recipe"/>
+                <button type="button"><img src="images/search.svg" alt="search"></button>
+            </div>
         </form>
         <hr />
         <article class="recipe">
             <img id="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp with ice cream in a bowl">
-            <span>dessert</span>
+            <div class="tag-row">
+                <span class="tag">dessert</span>
+            </div>
             <h2>Apple Crisp</h2>
             <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
                 <span aria-hidden="true" class="icon-star">⭐</span>
