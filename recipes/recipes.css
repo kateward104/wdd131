@@ -34,26 +34,30 @@ h1 {
 #search {
     display: flex;
     margin: 20px;
-    border: 1px solid black;
+    margin-top: -30px;
+    /*border: 1px solid black;*/
     border-radius: 3px;
 }
 
 #search input {
     width: 100%;
     height: 30px;
-    border-radius: 5px;
-    border-color: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid 1px black;
 }
 
 #search button img {
-    width: 15px;
+    width: 20px;
     height: 20px;
-    /* border-radius: 5px;
-    border-color: none; *//*Fix the border for this later*/
+    /* border-radius: 5px;*/
 }
 
 #search button {
     background: white;
+    border: solid 1px black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
@@ -70,11 +74,13 @@ h2 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
     margin-bottom: 5px;
+    font-size: 2em;
 }
 
 #apple-crisp {
     height: auto;
     width: auto;
+    max-width: 100%;
 }
 
 .rating {
@@ -85,17 +91,15 @@ h2 {
 footer {
     display: block;
     text-align: center;
+    margin-top: 40px;
 }
 
 .social {
     width: auto;
     height: 50px;
     display: flex;
-    /* Make the container a flexbox */
-    justify-content: center;
-    /* Space icons evenly across the container */
     align-items: center;
-    margin-top: 40px;
+    justify-content: center;
 }
 
 .social img {
@@ -106,4 +110,47 @@ footer {
 
 a[title="recipe icons"] {
     align-content: center;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+    }
+
+    .picture-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    #apple-crisp {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 960px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    .social {
+        justify-content: flex-end;
+    }
+    
+    a[title="recipe icons"] {
+        text-align: left;
+    }
 }

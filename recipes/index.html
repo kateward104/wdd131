@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Open Graph Meta Tags -->
+    <!--<meta property="og:title" content="RecipeBook - Delicious Recipes">
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Discover delicious recipes on RecipeBook. From desserts to savory meals, find the perfect recipe to try today." />
+    <meta property="og:image" content="https://www.example.com/images/recipe-image.jpg">
+    <meta property="og:url" content="https://www.example.com/recipe-page">-->
+    
+    <!-- Instagram Card Meta Tag -->
+    <meta name="instagram:card" content="summary_large_image">
+    <meta name="instagram:title" content="RecipeBook - Delicious Recipes">
+    <meta name="instagram:description"
+        content="Discover delicious recipes on RecipeBook. From desserts to savory meals, find the perfect recipe to try today.">
+    <meta name="instagram:image" content="images/apple-crisp.jpg">
+
+    <!-- Youtube Card Meta Tag -->
+    <meta name="youtube:card" content="summary_large_image">
+    <meta name="youtube:title" content="RecipeBook - Delicious Recipes">
+    <meta name="youtube:description"
+        content="Discover delicious recipes on RecipeBook. From desserts to savory meals, find the perfect recipe to try today.">
+    <meta name="youtube:image" content="images/apple-crisp.jpg">
+
+    <!-- Pinterest Card Meta Tag -->
+    <meta name="pinterest:card" content="summary_large_image">
+    <meta name="pinterest:title" content="RecipeBook - Delicious Recipes">
+    <meta name="pinterest:description"
+        content="Discover delicious recipes on RecipeBook. From desserts to savory meals, find the perfect recipe to try today.">
+    <meta name="pinterest:image" content="images/apple-crisp.jpg">
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RecipeBook - Delicious Recipes</title>
+    <link rel="icon" type="image/x-icon" href="images/recipe-book.png">
+    <meta name="description" content="Find Delicious Recipes">
+
     <!-- Add additional meta tags-->
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="recipes.css">
@@ -26,17 +60,19 @@
         <hr />
         <article class="recipe">
             <img id="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp with ice cream in a bowl">
-            <div class="tag-row">
-                <span class="tag">dessert</span>
+            <div class="picture-info">
+                <div class="tag-row">
+                    <span class="tag">dessert</span>
+                </div>
+                <h2>Apple Crisp</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
             </div>
-            <h2>Apple Crisp</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
         </article>
     </main>
     <footer>
