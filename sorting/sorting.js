@@ -75,10 +75,10 @@ simpleList.sort().reverse;
 console.log(simpleList);
 
 function searchList(list, query) {
-    function searchCallback(string) { 
-        return string.toLowerCase().includes(query.toLowerCase())
+    function searchCallback(string) {
+        return string.toLowerCase().includes(query.toLowerCase());
     }
-    return list.filter(searchCallback());
+    return list.filter(searchCallback);
 }
 
 console.log(searchList(simpleList, "b"));
@@ -93,19 +93,19 @@ function searchList2(list, query) {
             item.tags.find((tag) => tag.toLowerCase().includes(query.toLowerCase()))
         );
     }
-    return list.filter(searchCallback());
+    return list.filter(searchCallback);
 }
 
-hikes.sort((a,b) => a.distance < b.distance)
+hikes.sort((a, b) => a.distance > b.distance);
 
-hikes.sort((a,b) => {
+hikes.sort((a, b) => {
     // const aDistance = a.distance.split(" miles","")
     const aDistance = parseFloat(a.distance);
     const bDistance = parseFloat(b.distance);
     return aDistance - bDistance;
 })
 
-console.log(hikes)
+console.log(hikes);
 
 //filteredList = searchList2(hikes, "al");
 //console.log(filteredList)
