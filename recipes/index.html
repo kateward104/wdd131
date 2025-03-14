@@ -39,7 +39,7 @@
     <meta name="description" content="Find Delicious Recipes">
 
     <!-- Add additional meta tags-->
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module"></script>
     <link rel="stylesheet" href="recipes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,13 +53,14 @@
     <main>
         <form action="#">
             <div id="search">
-                <input type="search" placeholder="Find a recipe"/>
-                <button type="button"><img src="images/search.svg" alt="search"></button>
+                <input class="search" type="search" placeholder="Find a recipe"/>
+                <button id="searchbutton" type="button"><img src="images/search.svg" alt="search"></button>
             </div>
         </form>
         <hr />
-        <article class="recipe">
-            <img id="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp with ice cream in a bowl">
+        <holder></holder>
+        <!--<figure class="recipe">-->
+            <!-- <img id="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp with ice cream in a bowl">
             <div class="picture-info">
                 <div class="tag-row">
                     <span class="tag">dessert</span>
@@ -72,8 +73,8 @@
                     <span aria-hidden="true" class="icon-star-empty">⭐</span>
                     <span aria-hidden="true" class="icon-star-empty">☆</span>
                 </span>
-            </div>
-        </article>
+            </div> -->
+        <!--</figure>-->
     </main>
     <footer>
         <div class="social">
